@@ -1,0 +1,47 @@
+/* Reset some default styles */
+body, ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    /* Apply a simple and modern style to the navigation bar */
+    nav {
+        background-color: #333; /* Dark background color */
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px; /* Adjust the height of the navigation bar */
+    }
+    
+    li {
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff; /* White text color */
+        font-weight: bold;
+        padding: 10px;
+        transition: background-color 0.3s ease; /* Smooth background color transition */
+    }
+    
+    a:hover {
+        background-color: #555; /* Darker background color on hover */
+    }
+    
+    /* Responsive styles for smaller screens */
+    @media only screen and (max-width: 600px) {
+        ul {
+            flex-direction: column;
+            height: auto;
+        }
+    
+        li {
+            margin-bottom: 5px;
+        }
+    }
+    
